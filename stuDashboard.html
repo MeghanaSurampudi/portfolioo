@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="charts.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Welcome, Student</h1>
+    <nav>
+      <a href="student-dashboard.html">Dashboard</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="upload-certificates">
+      <h2>Upload Project Certificates</h2>
+      <form id="certificateForm">
+        <input type="file" accept=".pdf,.jpg,.png" multiple required />
+        <button type="submit" class="btn-primary">Upload</button>
+      </form>
+    </section>
+
+    <section class="semester-marks">
+      <h2>Input Semester Marks</h2>
+      <form id="marksForm">
+        <label for="semester">Semester:</label>
+        <select id="semester" required>
+          <option value="" disabled selected>Select Semester</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+        </select>
+
+        <label for="marks">Marks (%):</label>
+        <input type="number" id="marks" min="0" max="100" required />
+
+        <button type="submit" class="btn-primary">Submit Marks</button>
+      </form>
+    </section>
+
+    <section class="performance-trends">
+      <h2>Performance Trends</h2>
+      <canvas id="performanceChart" width="600" height="300"></canvas>
+    </section>
+
+    <section class="faculty-comments">
+      <h2>Faculty Feedback on Weak Areas</h2>
+      <div id="commentsList">
+        <p>No comments yet.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

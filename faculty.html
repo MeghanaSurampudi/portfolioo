@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Faculty Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Welcome, Faculty</h1>
+    <nav>
+      <a href="faculty-dashboard.html">Dashboard</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="student-list">
+      <h2>Student Performance</h2>
+      <label for="studentSelect">Select Student:</label>
+      <select id="studentSelect">
+        <option value="" disabled selected>Select Student</option>
+        <!-- dynamically populate student list -->
+      </select>
+    </section>
+
+    <section class="student-performance">
+      <h3>Performance Details</h3>
+      <div id="studentPerformance">
+        <p>Select a student to view performance.</p>
+      </div>
+    </section>
+
+    <section class="feedback-form">
+      <h3>Comment on Weak Areas</h3>
+      <form id="feedbackForm">
+        <textarea id="comment" placeholder="Enter your feedback here..." required></textarea>
+        <button type="submit" class="btn-primary">Submit Feedback</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

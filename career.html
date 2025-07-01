@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Career Cell Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Career Cell Dashboard</h1>
+    <nav>
+      <a href="career-dashboard.html">Dashboard</a>
+      <a href="logout.html">Logout</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="portfolio-overview">
+      <h2>Student Portfolios</h2>
+      <input type="text" id="searchStudent" placeholder="Search by student name or ID" />
+      <ul id="studentPortfolioList">
+        <!-- dynamically list student portfolios -->
+      </ul>
+    </section>
+
+    <section class="college-performance">
+      <h2>College Performance Summary</h2>
+      <div id="collegeStats">
+        <p>Average marks, strengths, weaknesses summary here.</p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
